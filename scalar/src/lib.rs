@@ -1,9 +1,9 @@
 pub fn sum(a : u8, b : u8) -> u8 {
-    a.checked.add(b).expect("Error: attempt to add with overflow")
+    a.checked_add(b).expect("Error: attempt to add with overflow")
 }
 
 pub fn diff(a : i16, b : i16) -> i16 {
-    a.checked.sub(b).expect("Error: attempt to subtract with overflow")
+    a.checked_sub(b).expect("Error: attempt to subtract with overflow")
 }
 
 pub fn pro(a : i8, b : i8) -> i8 {
